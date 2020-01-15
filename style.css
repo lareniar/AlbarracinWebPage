@@ -1,0 +1,104 @@
+/* variables */
+
+:root {
+    --header-separator-color: #177E89; 
+    --text-color: #323031; 
+  }
+/* /variables */
+*{
+    color:var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+a, a:focus, a:active a:visited {
+    text-decoration:none;
+    color:var(--text-color);
+}
+a:hover {
+    color:#FFC857;
+    text-decoration:none;
+}
+
+
+.header{
+    background-color: ;
+    display:flex;
+    margin: auto;
+    width: 98%;
+    height: 8em;
+    border-bottom: 2px solid var(--header-separator-color);
+   
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(27,147,158,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1b939e', GradientType=1 );
+}
+
+.headerLogo{
+    
+    flex-grow: 1;
+    overflow: inherit;
+}
+
+.headerLinks{
+    padding-right: 1em;
+    padding-bottom: auto;
+    align-content:bottom;
+}
+
+.headerLinks > a{
+    position: relative;
+    flex-grow: 1;
+    padding:0.2em;
+    top:2.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.90em;
+    text-shadow: 0.4px 0.5px 1px; 
+}
+
+.escudoheader{
+    width:6em;
+    margin-left: 3em;
+}
+
+/* /HEADER */
+
+/* BODY */
+
+
+
+.bodyContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.CitaIndex{
+    width: 80%;
+    margin: 20px auto;
+    text-justify: center;
+}
+
+.CitaIndex>p{
+   font-size: 35px;
+}
+
+/* MEDIA */
+
+
+  @media only screen and (max-width: 895px) {
+    .headerLinks > a{
+        visibility: hidden;
+    
+    }
+
+    .header{
+        display:flex;
+        margin: auto;
+        width: 98%;
+        height: 7em;
+        border-bottom: none;
+    }
+  }
