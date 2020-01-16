@@ -1,4 +1,19 @@
 //Javascript Document
+// $(document).ready(function(){
+//             $("a").css('text-decoration', 'underline');
+//             $("a").on('mouseenter', function(){
+//                 $(this).css({
+//                     background: "-webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000))" 
+//                 });
+//             });
+//             $("a").on('mouseleave', function(){
+//                 $(this).css({
+//                     background: "none" 
+//                 });
+//             });
+
+            
+// })
 
 document.write(`
     <div class="header">
@@ -15,3 +30,6 @@ document.write(`
             </div>
     </div>
     `)
+
+
+    

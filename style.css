@@ -9,6 +9,9 @@
     color:var(--text-color);
     font-family: 'Roboto', sans-serif;
 }
+body{
+    margin: 0;
+}
 a, a:focus, a:active a:visited {
     text-decoration:none;
     color:var(--text-color);
@@ -20,21 +23,20 @@ a:hover {
 
 
 .header{
-    background-color: ;
     display:flex;
-    margin: auto;
-    width: 98%;
+    margin: 0;
+    
     height: 8em;
-    border-bottom: 2px solid var(--header-separator-color);
-   
+
     background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(27,147,158,1)));
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
-    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
-    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(27,147,158,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1b939e', GradientType=1 );
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+
 }
 
 .headerLogo{
@@ -44,7 +46,7 @@ a:hover {
 }
 
 .headerLinks{
-    padding-right: 1em;
+    padding-right: 4em;
     padding-bottom: auto;
     align-content:bottom;
 }
@@ -52,7 +54,7 @@ a:hover {
 .headerLinks > a{
     position: relative;
     flex-grow: 1;
-    padding:0.2em;
+  
     top:2.5em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.90em;
@@ -62,13 +64,19 @@ a:hover {
 .escudoheader{
     width:6em;
     margin-left: 3em;
+    
 }
 
 /* /HEADER */
 
 /* BODY */
 
-
+.ImagenAlbarracin{
+    width: 100%;
+    -webkit-box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+    -moz-box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+    box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+}
 
 .bodyContainer{
     display:flex;
@@ -77,11 +85,12 @@ a:hover {
 
 .CitaIndex{
     width: 80%;
-    margin: 20px auto;
+    margin: 70px auto;
     text-justify: center;
 }
 
 .CitaIndex>p{
+
    font-size: 35px;
 }
 
