@@ -1,20 +1,3 @@
-//Javascript Document
-// $(document).ready(function(){
-//             $("a").css('text-decoration', 'underline');
-//             $("a").on('mouseenter', function(){
-//                 $(this).css({
-//                     background: "-webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000))" 
-//                 });
-//             });
-//             $("a").on('mouseleave', function(){
-//                 $(this).css({
-//                     background: "none" 
-//                 });
-//             });
-
-            
-// })
-
 document.write(`
     <div class="header">
             <div class="headerLogo"> 
@@ -22,11 +5,11 @@ document.write(`
             </div>
 
             <div class="headerLinks">
-                <a href=""> Inicio </a>
-                <a href=""> Nosotros </a>
-                <a href=""> Turismo </a>
-                <a href=""> Alrededores </a>
-                <a href=""> Contacto </a>
+                <a href="index.html">Inicio <div id='0' class="portada"></div> </a>
+                <a href="nosotros.html">Nosotros <div id='1' class="portada"></div> </a>
+                <a href="turismo.html"> Turismo <div id='2' class="portada"></div> </a>
+                <a href="alrededores.html"> Alrededores <div id='3' class="portada"></div> </a>
+                <a href="contacto.html"> Contacto <div id='4' class="portada"></div> </a>
             </div>
     </div>
     `)
