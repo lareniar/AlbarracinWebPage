@@ -1,276 +1,228 @@
 /* variables */
 
 :root {
-    --header-separator-color: #177E89; 
-    --text-color: #323031; 
-  }
+    --header-separator-color: #177E89;
+    --text-color: #323031;
+}
+
 /* /variables */
-*{
-    color:var(--text-color);
+* {
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
 }
-img{
+
+img {
     width: 100%;
 }
-body{
+
+body {
     margin: auto;
 }
-a, a:focus, a:active a:visited {
-    text-decoration:none;
-    color:var(--text-color);
+
+a,
+a:focus,
+a:active a:visited {
+    text-decoration: none;
+    color: var(--text-color);
 }
+
 a:hover {
-    text-decoration:none;
+    text-decoration: none;
 }
- 
-.portada{ /* background del menú cuando hover */
+
+.portada {
+    /* background del menú cuando hover */
     position: absolute;
     background-color: rgb(19, 19, 19);
     width: 100%;
     height: 100%;
-    z-index: -999;
-    display:none;
-    bottom:0px;
+    display: none;
+    bottom: 0px;
     right: 0;
 }
 
-.header{
-    display:flex;
-    margin: 0;
-    height: 8em;
-    position: fixed;
+.dinamico,
+.menudinamico {
+    display: none;
+}
+
+.header {
+    display: flex;
     width: 100%;
     z-index: 999;
     box-shadow: 0px 5px 6px black;
-margin-bottom: 140px;
-background: rgba(32,136,167,1);
-background: -moz-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,136,167,1)), color-stop(93%, rgba(255,255,255,0.94)), color-stop(100%, rgba(255,255,255,0.94)));
-background: -webkit-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
-background: -o-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
-background: -ms-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
-background: linear-gradient(to bottom, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2088a7', endColorstr='#ffffff', GradientType=0 );
+    background: rgba(32, 136, 167, 1);
+    background: -moz-linear-gradient(top, rgba(32, 136, 167, 1) 0%, rgba(255, 255, 255, 0.94) 93%, rgba(255, 255, 255, 0.94) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32, 136, 167, 1)), color-stop(93%, rgba(255, 255, 255, 0.94)), color-stop(100%, rgba(255, 255, 255, 0.94)));
+    background: -webkit-linear-gradient(top, rgba(32, 136, 167, 1) 0%, rgba(255, 255, 255, 0.94) 93%, rgba(255, 255, 255, 0.94) 100%);
+    background: -o-linear-gradient(top, rgba(32, 136, 167, 1) 0%, rgba(255, 255, 255, 0.94) 93%, rgba(255, 255, 255, 0.94) 100%);
+    background: -ms-linear-gradient(top, rgba(32, 136, 167, 1) 0%, rgba(255, 255, 255, 0.94) 93%, rgba(255, 255, 255, 0.94) 100%);
+    background: linear-gradient(to bottom, rgba(32, 136, 167, 1) 0%, rgba(255, 255, 255, 0.94) 93%, rgba(255, 255, 255, 0.94) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2088a7', endColorstr='#ffffff', GradientType=0);
 }
 
-.headerLogo{
-    
+.headerLogo {
+
     flex-grow: 1;
     overflow: inherit;
 }
 
-.headerLinks{
-    padding-right:2em;
+.headerLinks {
+    padding-right: 2em;
     padding-bottom: auto;
-    align-content:bottom;
+    align-content: bottom;
 }
 
-.headerLinks > a{
+.headerLinks>a {
     position: relative;
     flex-grow: 1;
-    padding-right:0.2em;
-    padding-left:0.2em;
-    top:2.5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    top: 2em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.90em;
-    text-shadow: 0.4px 0.5px 1px; 
+    text-shadow: 0.4px 0.5px 1px;
 }
 
-.escudoheader{
-    width:6em;
+.escudoheader {
+    width: 5.2em;
     margin-left: 3em;
-    
+
 }
 
 /* /HEADER */
 
 /* BODY */
-.bodyContainer{
-   padding-top: 8.5em;
-}
 
-.AlbarracinPortada{
-    -webkit-box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
-    -moz-box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
-    box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+.AlbarracinPortada {
+    -webkit-box-shadow: 0px 47px 132px -101px rgba(24, 48, 1, 0.92);
+    -moz-box-shadow: 0px 47px 132px -101px rgba(24, 48, 1, 0.92);
+    box-shadow: 0px 47px 132px -101px rgba(24, 48, 1, 0.92);
     width: 100%;
 
 }
 
-.ImagenAlbarracin{
+.ImagenAlbarracin {
     width: 100%;
     height: 800px;
-    
+
     position: absolute;
 }
 
-.bodyContainer{
-    display:flex;
+.bodyContainer {
+
+
+    display: flex;
     flex-direction: column;
 }
 
-.CitaIndex{
+.CitaIndex {
     width: 80%;
     margin: 70px auto;
     text-justify: center;
 }
 
-.CitaIndex>p{
+.CitaIndex>p {
 
-   font-size: 35px;
+    font-size: 35px;
 }
 
 
-  /*imagenes del carrusel*/
-  #portada2, #portada3{
+/*imagenes del carrusel*/
+#portada2,
+#portada3 {
     display: none;
-  }
-  /* container de las imagnes del carrusel*/
-  .AlbarracinPortada{
+}
+
+/* container de las imagnes del carrusel*/
+.AlbarracinPortada {
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 800px;
-  }
+}
 
-  /*sobre nosotros*/
-    #tabs{
-        width: 90%;
-        
-    }
-    #tabs ul {
-        list-style-type: none;
-        display: flex;
-        margin-left: 20%;
-    }
-    #tabs ul li{
-        padding: 2%;
-        width: 200px;
-        margin-left:5%;
-        background-color: rgb(0, 0, 0);
-        border-radius: 5%;
-        border: 2px solid rgb(107, 107, 107);
-    }
-    #tabs ul li:hover{
-        background-color: rgba(0, 0, 0, 0.452);
-        box-shadow:2px 2px 10px 8px rgb(255, 255, 153);
-    }
-    #tabs ul li a{
-        color: white;
-    }
-    #tab-Historia{
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/HDR_-_Albarrac%C3%ADn_1.jpg/1024px-HDR_-_Albarrac%C3%ADn_1.jpg');
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        padding:2%;
-    }
-    #tab-Actualidad{
-        background-image: url('https://pbs.twimg.com/media/EKD4S4pWkAA1riD.jpg');
-        background-repeat:no-repeat;
-        background-size: 100% 100%;
-        padding:2%;
-    }
-    #tab-Tradiciones{
-        background-image: url('https://aragonizate.files.wordpress.com/2015/10/aragon-canta-y-baila.jpg');
-        background-repeat:no-repeat;
-        padding:2%;
-        background-size: 100% 100%;
-        height: 300px;
-    }
-    #tabs p{
-        color: rgb(252, 220, 41);
-        text-shadow: 2px 2px 1px rgb(22, 22, 22);
-        margin:2% ;
-    }
-    #imgIzquierda{
-        float: left;
-        margin:1%;
-    }
-    #imgDerecha{
-        float: right;
-        margin:1%;
-    }
+audio {
 
-    /*turismo*/
-    .turismo{
-        padding: 2%;
-    }
-    .btnTurismo{
-        padding: 2%;
-    }
-    .btnTurismo button{
-        padding: 2%;
-        border: 2px solid;
-        border-radius: 5%;
-        background-color: rgba(0, 76, 139, 0.37);
-        
-    }
-    .btnTurismo button:hover{
-        background-color: rgba(0, 76, 139, 0.815);
-        color: white;
-    }
-    .divGrid{
-        padding: 2%;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto ;
-        grid-gap: 15px;
-        xpadding-left: 10%;
-        background-color: #084C61;
-        width: 60%;
-    }
-    .divGrid img{
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    .gridItem div{
-        background-color: rgb(92, 167, 175);
-        padding:1%;
-        width: 200px;
-        height: 200px;
-        border-radius: 5%;
-    }
-    .divTexto{
-        position: absolute;
-        z-index: 999;
-        display: none;
-    }
-    .gridItem p{
-        color:white;
-    }
+    margin: 60px auto;
+
+
+}
 
 
 
-    /********************* HTML TURISMO *********************/
+/********************* HTML TURISMO *********************/
+#accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#accordion>h3 {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    color: black;
+
+
+}
+
+.accordion-image {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 800px;
+}
+
+.accordiontext {
+    color: var(--text-color);
+    font-size: 2em;
+    text-align: left;
+    margin-right: 60%;
+    background-color: rgba(255, 255, 255, 0.534);
+    position: relative;
+    top: 4em;
+}
+
+.accordiontitle {
+    padding-top: 20px;
+}
 
 /********************* FIN HTML TURISMO *********************/
 
 /********************* HTML NOSOTROS *********************/
 /*fondo color*/
-#bodyNosotros{
-    background-image: linear-gradient(315deg, #fcc3a5 1%, #fffaeb 86%);
-    
+#bodyNosotros {
+    xbackground-image: linear-gradient(315deg, #fcc3a5 1%, #fffaeb 86%);
 }
+
 /* GALERIA DE FOTOS */
-.galeria{/*zona de la galeria*/
+.galeria {
+    /*zona de la galeria*/
     width: 80%;
     margin-bottom: 20px;
     position: relative;
 }
+
 #fotos img {
-    width: 100% ;
+    width: 100%;
     height: auto;
     object-fit: cover;
     padding: 15px;
     transition: 1s;
 }
-#fotos img:hover{
-    transform: scale(1.1);/* agrandamiento de la imagen*/
-    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.75);/*el shadow*/
+
+#fotos img:hover {
+    transform: scale(1.1);
+    /* agrandamiento de la imagen*/
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.75);
+    /*el shadow*/
 }
 
-#fotos{ /*EL GRID */
+#fotos {
+    /*EL GRID */
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
@@ -278,89 +230,137 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2088a7', end
     grid-auto-rows: minmax(100px, auto);
 }
 
-/*imagenes verticales que ocupen dons lineas*/
-.vertical{
-    grid-row: span 2;
-}
-/*para meter imagenes que ocumen el doble*/
-.grande{
-    grid-row: span 2;
-    grid-column: span 2;;
+.textos>p {
+    text-align: justify;
 }
 
-h2{
+/*imagenes verticales que ocupen dons lineas*/
+.vertical {
+    grid-row: span 2;
+}
+
+/*para meter imagenes que ocumen el doble*/
+.grande {
+    grid-row: span 2;
+    grid-column: span 2;
+    ;
+}
+
+h2 {
     position: relative;
 }
-#imgIzquierda{/*las imágenes que acompañan al texto en el lado izquierdo*/
+
+#imgIzquierda {
+    /*las imágenes que acompañan al texto en el lado izquierdo*/
     float: left;
-    margin:1%;
+    margin: 1%;
 }
-#imgDerecha{/*las imágenes que acompañan al texto en el lado derecho*/
+
+#imgDerecha {
+    /*las imágenes que acompañan al texto en el lado derecho*/
     float: right;
-    margin:1%;
+    margin: 1%;
 }
-.textos{
+
+.textos {
     width: 80%;
     margin-left: 10%;
     text-align: left;
     border-bottom: 2px solid var(--header-separator-color);
 }
-#general{
+
+#general {
+    width: 75%;
     margin-top: 5%;
+    margin-left: 13%;
+    text-align: justify;
+    font-size: 30px;
 }
+
 /*div e imagenes que se muestran al clicar una img de la galeria*/
-#divImgSelect{
+#divImgSelect {
     position: fixed;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.788);
-    bottom: 0; 
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-#exit{
+
+#exit {
     width: 50px;
     position: absolute;
     right: 2%;
-    margin-top:2%;
+    margin-top: 2%;
 }
-#imgSelect{
+
+#imgSelect {
     width: 50%;
     margin: 10%;
 }
+
 /* fin div img*/
 /********************* FIN HTML NOSOTROS *********************/
-    /********************* HTML CONTACTO *********************/
-    /*contacto*/
-    .form-horizontal{
-        margin-top: 1%;
-        align-self: center;
-        padding: 2%;
-        background-color:rgb(253, 241, 170);
-        width: 30%;
-    }
-    .contacto form input, .contacto form textarea{
-        border: none;
-        border-bottom: 2px solid rgb(172, 172, 172);
-    }
+
+/********************* HTML ALREDEDORES *********************/
+#tablaAlrededores {
+    width: 80%;
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+.tdImg {
+    width: 31%;
+    column-span: 2;
+}
+
+.tdParrafo {
+    background-color: rgba(128, 128, 128, 0.288);
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 1%;
+    width: 69%;
+}
+
+/********************* FIN HTML ALREDEDORES *********************/
+
+/********************* HTML CONTACTO *********************/
+/*contacto*/
+.form-horizontal {
+    margin-top: 1%;
+    align-self: center;
+    padding: 2%;
+    background-color: rgb(253, 241, 170);
+    width: 30%;
+}
+
+.contacto form input,
+.contacto form textarea {
+    border: none;
+    border-bottom: 2px solid rgb(172, 172, 172);
+}
+
 /********************* FIN HTML CONTACTO *********************/
-  /*footer*/
-  .page-footer{
-padding-bottom: 1em;
+
+/*footer*/
+.page-footer {
+    padding-bottom: 1em;
     width: 100%;
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,199,87,0.94)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffc757', GradientType=0 );
-    
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 199, 87, 0.94) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 199, 87, 0.94)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 199, 87, 0.94) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 199, 87, 0.94) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 199, 87, 0.94) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 199, 87, 0.94) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffc757', GradientType=0);
+
 }
 
 
-.footericon{
+.footericon {
     position: relative;
     height: 25px;
     width: 25px;
@@ -372,19 +372,51 @@ padding-bottom: 1em;
 
 
 /* MEDIA */
-
-
+/* leire es aqui */
+/* aqui manejaremos el menu dinamico */
 @media only screen and (max-width: 895px) {
-    .headerLinks > a{
+    .headerLinks>a {
         visibility: hidden;
-    
+
     }
 
-    .header{
-        display:flex;
+    .header {
+        display: flex;
         margin: auto;
-        width: 98%;
         height: 7em;
         border-bottom: none;
     }
-  }
+
+    .escudoheader{
+        display: none;
+    }
+    .dinamico {
+        display: block;
+        padding: 35px;
+    }
+
+    .spanmenu {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.90em;
+        text-shadow: 0.4px 0.5px 1px;
+        margin: 2em;
+
+    }
+
+    .menudinamico {
+        background-color: red;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+    }
+}
+/* esto esconde el menu dinamico si haces resize */
+@media only screen and (min-width: 895px) {
+    .dinamico,
+    .menudinamico {
+        display: none;
+    }
+
+}

@@ -28,6 +28,12 @@
   }
 
   $(document).ready(function(){
+
+    $("img").hover(function() {
+      $(this).css('cursor','pointer');
+  }, function() {
+      $(this).css('cursor','auto');
+  });
     //MENU SUPERIOR DE PÁGINAS (cambio de color)
     aColor=["red","blue","green","yellow","orange"]// array de colores para los background
     // menú superior
@@ -76,7 +82,57 @@
     $("#exit").click(function(){
       $("#divImgSelect").fadeOut();
     })
-   
+
+    // enlaces de imagenes en turismo.html
+    $("#accordiontransporte").on("click", function(){
+      window.open("https://albarracinturismo.com/?s=&category=114&location=&a=true")
+    })
+    $("#accordionhoteles").on("click", function(){
+      window.open("https://albarracinturismo.com/cat/alojamientos/")
+    })
+    $("#accordionrestaurantes").on("click", function(){
+      window.open("https://albarracinturismo.com/cat/restaurantes_bares/")
+    })
+    $("#accordioncaballo").on("click", function(){
+      window.open("https://www.caballosalbarracin.com/")
+    })
+    $("#accordionsenderos").on("click", function(){
+      window.open("https://albarracinturismo.com/turismo-accesible/")
+    })
+    $("#accordionescalada").on("click", function(){
+      window.open("https://albarracinturismo.com/turismo-deportivo-en-la-sierra-de-albarracin-teruel/")
+    })
+    // $( function() {
+    //   $( "#accordion" ).accordion({
+    //       collapsible: true, active: false 
+    //     });
+    // } );
+
+    //leire es aqui 
+    // menu dinamico
+    // esto calcula todo el rato el tamaño de la pantalla (por si hace scroll el movil o cambias de tamaño de pantalla)
+    $( window ).resize(function() {
+      if ($(window).width() <= 895) {
+        //aqui va el click en el menu y que aparezca el menu lateral
+        $(".dinamico").on("click", function(){
+          alert("dentro")
+          // esto es para que el usuario NO haga scroll
+          $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+
+            // todo esto sería cuando el usuario hace click fuera del div del menu, asi vuelve a poder hacer scroll y se esconde el div
+          //   $('html, body').css({
+          //     overflow: 'auto',
+          //     height: 'auto'
+          // });
+        });
+        })
+     }else{
+
+     }
+    });
+    
 
   })
 
